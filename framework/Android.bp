@@ -1,0 +1,35 @@
+package {
+    default_applicable_licenses: ["aidl_packages_modules_Wifi_license"],
+}
+
+filegroup {
+    name: "framework-wifi-updatable-exported-aidl-sources",
+    srcs: ["aidl-export/**/*.aidl"],
+    path: "aidl-export",
+    visibility: ["//visibility:public"],
+}
+
+filegroup {
+    name: "framework-wifi-updatable-java-sources",
+    srcs: [
+        "java/**/*.java",
+        "java/**/*.aidl",
+    ],
+    path: "java",
+    visibility: ["//visibility:public"],
+}
+
+filegroup {
+    name: "framework-wifi-updatable-sources",
+    srcs: [
+        ":framework-wifi-updatable-java-sources",
+        ":framework-wifi-updatable-exported-aidl-sources",
+    ],
+    visibility: ["//visibility:public"],
+}
+
+filegroup {
+    name: "framework-wifi-annotations",
+    srcs: ["java/android/net/wifi/WifiAnnotations.java"],
+    visibility: ["//visibility:public"],
+}

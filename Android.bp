@@ -1,0 +1,12 @@
+// Auto-generated Blueprint for packages/modules/Wifi (framework AIDL)
+
+package {
+    default_applicable_licenses: ["aidl_packages_modules_Wifi_license"],
+}
+
+license {
+    name: "aidl_packages_modules_Wifi_license",
+    visibility: [":__subpackages__"],
+    license_kinds: ["SPDX-license-identifier-Apache-2.0"],
+    license_text: ["NOTICE"],
+}
